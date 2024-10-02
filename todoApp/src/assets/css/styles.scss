@@ -1,0 +1,19 @@
+@import "./addons";
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  color: #565656;
+}
+body {
+  padding: 0;
+  margin: 0;
+  background: #f8f9ff;
+}
+a {
+  text-decoration: none;
+}
+
+@import "./main";
+@import "./update";

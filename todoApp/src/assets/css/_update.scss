@@ -1,0 +1,54 @@
+.update {
+  &Back {
+    background: #6070f0;
+    color: white;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+    border: none;
+    border-radius: 10px;
+    top: 25px;
+    left: 25px;
+    &:hover {
+      background: white;
+      color: #6070f0;
+      box-shadow: 0 0 0 1px #6070f0;
+
+      .fa-solid {
+        color: #6070f0;
+      }
+    }
+
+    .fa-solid {
+      color: white;
+    }
+  }
+  &Form {
+    &Input {
+      min-width: 300px;
+      border-radius: 10px;
+      border: 1px solid #cccedf;
+      &:focus,
+      &:focus-visible,
+      &:target,
+      &:active {
+        border: 1px solid #6070f0;
+        outline-color: #6070f0;
+      }
+      @media only screen and (max-width: 600px) {
+        min-width: auto;
+      }
+    }
+    &Button {
+      background: #6070f0;
+      color: white;
+      transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+      border: none;
+      border-radius: 10px;
+
+      &:hover {
+        background: white;
+        color: #6070f0;
+        box-shadow: 0 0 0 1px #6070f0;
+      }
+    }
+  }
+}

@@ -1,0 +1,152 @@
+@charset "UTF-8";
+.w-fit-content {
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.fw-medium {
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  color: #565656;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  background: #f8f9ff;
+}
+
+a {
+  text-decoration: none;
+}
+
+.todoTitle {
+  color: #63657f;
+}
+.todoHeader {
+  font-size: 18px;
+}
+.todoHeaderAdd {
+  background: #6070f0;
+  color: white;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+}
+.todoHeaderAdd:hover {
+  background: white;
+  color: #6070f0;
+  box-shadow: 0 0 0 1px #6070f0;
+}
+.todoHeaderCount {
+  background: #cccedf;
+}
+.todoBody {
+  background: #ecedf7;
+  border-radius: 10px;
+}
+.todoBody .card {
+  font-size: 16px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.todoBody .card:last-child {
+  margin-bottom: 0;
+}
+.todoBody .cardContentCheck, .todoBody .cardContentButton {
+  background: #eeeeee;
+  width: 30px;
+  height: 30px;
+  border: none;
+  border-radius: 5px;
+}
+.todoBody .cardContentCheck {
+  position: relative;
+  flex-shrink: 0;
+}
+.todoBody .cardContentCheckInput {
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+}
+.todoBody .cardContentCheckInput::before {
+  content: "✔";
+  color: white;
+  font-size: 20px;
+  text-align: center;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  background-color: #6070f0;
+  opacity: 0;
+  transition: opacity 0.3s;
+  border-radius: 3px;
+}
+.todoBody .cardContentCheckInput:checked::before {
+  opacity: 1;
+}
+.todoBody .cardContentButton {
+  padding-block: 1px;
+  padding-inline: 6px;
+  line-height: inherit;
+  text-align: center;
+}
+
+.updateBack {
+  background: #6070f0;
+  color: white;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 10px;
+  top: 25px;
+  left: 25px;
+}
+.updateBack:hover {
+  background: white;
+  color: #6070f0;
+  box-shadow: 0 0 0 1px #6070f0;
+}
+.updateBack:hover .fa-solid {
+  color: #6070f0;
+}
+.updateBack .fa-solid {
+  color: white;
+}
+.updateFormInput {
+  min-width: 300px;
+  border-radius: 10px;
+  border: 1px solid #cccedf;
+}
+.updateFormInput:focus, .updateFormInput:focus-visible, .updateFormInput:target, .updateFormInput:active {
+  border: 1px solid #6070f0;
+  outline-color: #6070f0;
+}
+@media only screen and (max-width: 600px) {
+  .updateFormInput {
+    min-width: auto;
+  }
+}
+.updateFormButton {
+  background: #6070f0;
+  color: white;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s;
+  border: none;
+  border-radius: 10px;
+}
+.updateFormButton:hover {
+  background: white;
+  color: #6070f0;
+  box-shadow: 0 0 0 1px #6070f0;
+}/*# sourceMappingURL=styles.css.map */
